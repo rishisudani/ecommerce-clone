@@ -6,9 +6,8 @@
 
 html, body {
     margin: 0;
-    padding: 0;
     width: 100%;
-    height: auto;
+    background-color: #e2e2e2;
 }
 
 .border {
@@ -31,8 +30,8 @@ html, body {
 
 .navbar {
     height: 60px;
-    width: 100vw;
-    min-width: 100vw; 
+    width: 100%;
+    min-width: 1000px;
     background-color: #131921;
     color: white;
     display: flex;
@@ -253,8 +252,8 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
-    min-width: 100vw;
+    width: 100%;
+    min-width: 1000px;
 }
 
 .panel-icon {
@@ -314,38 +313,42 @@ html, body {
 
 /** --HERO SECTION-- **/
 
-/* .hero-section {
-    height: 600px;
-    background: url("hero_image.jpg") center/cover no-repeat;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0, 0, 0, 0) 100%);
-    mask-repeat: no-repeat;
-    mask-size: cover;
-} */
-
 .hero-section {
     position: relative;
     height: 600px;
-    background: url("hero_image.jpg") center/cover no-repeat;
-    overflow: hidden; /* ensures fade overlay stays inside */
+    background: url("hero_image.jpg") top center no-repeat;
+    width: 100%;
+    min-width: 1000px;
+    background-size: cover;
+    background-attachment: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-section::after {
     content: "";
     position: absolute;
     inset: 0; /* shorthand for top:0; right:0; bottom:0; left:0 */
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0) 70%,
-        var(--body-bg, #fff) 100%
-    );
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0) 70%,var(--body-bg, #e2e2e2) 100%);
     pointer-events: none; /* so it doesn’t block clicks on content */
 }
 
 .hero-message {
     background-color: white;
     color: black;
+    display: flex;
+    height: 40px;
+    width: 95%;
+    min-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+    font-size: 0.875rem;
+    white-space: nowrap;
 }
 
 .hero-message a {
     color: #0c3353;
+    cursor: pointer;
 }
