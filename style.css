@@ -52,7 +52,7 @@ html, body {
 }
 
 .logo {
-    background-image: url("amazon_logo.png");
+    background-image: url("logo.png");
     background-size: contain;
     height: 90px;
     width: 165px;
