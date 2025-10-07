@@ -339,7 +339,7 @@ html, body {
     color: black;
     display: flex;
     height: 40px;
-    width: 95%;
+    width: 96%;
     min-width: 1000px;
     justify-content: center;
     align-items: center;
@@ -349,6 +349,61 @@ html, body {
 }
 
 .hero-message a {
+    color: #0c3353;
+    cursor: pointer;
+}
+
+/** --SHOP SECTION-- **/
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+    position: relative;
+    top: -275px;
+    z-index: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+    min-width: 1000px;   /* ensures layout never smaller than 1000px */
+    overflow-x: hidden;
+}
+
+.box {
+    background-color: white;
+    height: 420px;
+    flex: 1 1 calc(25% - 20px);  /* 4 per row */
+    min-width: 250px;
+    max-width: 350px;
+    padding: 20px 0 15px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1040px) {
+    .shop-section {
+        margin: 0 auto;
+    }
+    .box {
+        flex: 1 1 calc(33.333% - 40px); /* slightly tighter layout to keep 3 per row */
+        min-width: 300px;
+    }
+}
+
+.box-img {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.box-content p {
     color: #0c3353;
     cursor: pointer;
 }
