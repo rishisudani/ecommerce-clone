@@ -396,6 +396,7 @@ html, body {
     background-repeat: no-repeat;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .box-content {
@@ -405,5 +406,98 @@ html, body {
 
 .box-content p {
     color: #0c3353;
+    cursor: pointer;
+}
+
+/** --FOOTER SECTION-- **/
+
+footer {
+    background-color: white;
+    min-width: 1000px;
+}
+
+/** Recommendations-section **/
+
+.footer-recommend {
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-recommend button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 15%;
+    background-color: #ffd814;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    max-width: 250px;
+}
+
+.footer-recommend p {
+    font-size: 0.65rem;
+}
+
+.footer-recommend a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/** Back To Top-section **/
+
+.footer-backtotop {
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.footer-backtotop p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/** About Us-section **/
+
+.footer-aboutus {
+    background-color: #232f3e;
+    color: white;
+    height: 300px;
+    display: flex;
+    min-width: 1000px;
+    justify-content: space-between;
+    padding: 0 20vw;
+}
+
+.footer-lists {
+    margin-top: 30px;
+}
+
+.footer-lists ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-lists p {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.footer-lists a {
+    color: #dddddd;
+    font-size: 0.8rem;
+    font-weight: 500;
     cursor: pointer;
 }
